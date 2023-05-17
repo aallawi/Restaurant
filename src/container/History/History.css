@@ -1,0 +1,90 @@
+.history {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.history .history_one , 
+.history .history_two {
+    flex: 1;
+    padding: 1rem;
+}
+
+.history_one_photo ,
+.history_two_photo {
+    width: 100%;
+}
+.history_one_photo img ,
+.history_two_photo img {
+    width: 100%;
+    height: 100%;
+}
+.history .history_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text_frattoria {
+    color: var(--color-grey);
+    font-family: var(--font-alt);
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+
+    padding-bottom: 1rem;
+}
+
+.groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+.group {
+    padding: 10px;
+}
+.group img {
+    padding: 0.3rem 0;
+}
+.break {
+    /* لسه معملناش فاصل بين الأرقام */
+}
+
+.heading ,
+.number {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+}
+.text {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 20px;
+    font-size: 14px;
+    max-width: 60px;
+}
+
+@media screen and (max-width : 750px) {
+    .history {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .group {
+        text-align: center;
+        padding: 5px;
+    }
+    .group>div {
+        padding: 0;
+    }
+    .heading ,
+    .number {
+        font-size: 28px;
+    }
+}
